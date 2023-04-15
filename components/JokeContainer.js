@@ -14,6 +14,14 @@ Joker.propTypes = {
   joke: PropTypes.shape({
     setup: PropTypes.string,
     punchline: PropTypes.string,
-  }).isRequired,
-  btnText: PropTypes.string.isRequired,
+  }),
+  btnText: PropTypes.string,
+};
+
+Joker.defaultProps = {
+  joke: {
+    setup: 'Default Setup',
+    punchline: 'Default Punchline',
+  },
+  btnText: 'Get A Joke',
 };
